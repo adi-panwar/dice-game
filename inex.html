@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <title>dice-game</title>
+  </head>
+  <body class="font-[Poppins]">
+    <div
+      id="container"
+      class="p-8 bg-gradient-to-r from-gray-900 to-black min-h-screen flex flex-col items-center justify-center transition-all duration-500"
+    >
+      <h1 class="text-white text-2xl font-bold mb-4 tracking-wide"></h1>
+      <div
+        class="p-6 bg-white/10 backdrop-blur-lg border border-white/20 shadow-2xl rounded-2xl w-72 text-center"
+      >
+        <div class="p-4 flex items-center justify-between text-8xl">
+          <div class="dice-One">
+            <i id="dice-One" class="fa-solid fa-dice-one"></i>
+          </div>
+          <div class="dice-Two">
+            <i id="dice-Two" class="fa-solid fa-dice-three"></i>
+          </div>
+        </div>
+        <button
+          class="mt-6 p-3 bg-white text-black cursor-pointer w-full hover:scale-105 transition-all duration-300 rounded-xl font-bold shadow-lg"
+        >
+          Roll Dice
+        </button>
+      </div>
+      <p class="text-white my-6 text-xs text-center">
+        Rules : If You Get Total Of 2,4,6 You Will Won And If You Get 3,7,9 The
+        You Will Lose!
+      </p>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/e5a77a4fe1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </body>
+</html>
